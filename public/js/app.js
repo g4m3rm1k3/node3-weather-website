@@ -16,9 +16,9 @@ weatherForm.addEventListener("submit", (e) => {
 			if (data.error) {
 				messageOne.textContent = data.error;
 			} else {
-				console.log(data.forecast);
 				messageOne.textContent = data.location;
-				messageTwo.textContent = `${data.forecast.weather_descriptions} temp: ${data.forecast.temperature} feels like: ${data.forecast.feelslike}`;
+				messageTwo.textContent = `${data.forecast.weather_descriptions} temp: ${data.forecast.temperature} feels like: ${data.forecast.feelslike}
+				wind speed ${data.forecast.wind_speed}`;
 			}
 		});
 	});
